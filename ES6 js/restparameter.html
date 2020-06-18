@@ -1,0 +1,50 @@
+<html>
+<body>
+    <h2>ES6 Concept</h2>
+    <h2>rest parameter </h2>
+<script>
+//es5
+
+// function sum(a,b){
+//     console.log(a+b);
+// }
+
+// sum(1,2,3,4,5,6);
+
+
+// function sum(...inputs){
+//     console.log("all value:",...inputs);
+//     console.log("value of array",inputs);
+
+// let total =0;
+// for(let i of inputs){
+//     total = total+i;
+// }
+// console.log(total);
+// }
+
+// sum(1,2,3,4,5,6);
+
+
+
+function fun(a,b,...c){
+    console.log(`${a} ${b}`);
+    console.log(c);
+    console.log(c[1]);
+    console.log(c.length);
+    console.log(c.indexOf('rupa'));
+}
+
+fun('nitin','raaz','mohan','pooja','rupa','sanam','priyanka')
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

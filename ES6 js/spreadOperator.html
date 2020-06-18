@@ -1,0 +1,74 @@
+<html>
+<body>
+    <h2>ES6 Concept</h2>
+    <h2>spread operator </h2>
+<script>
+
+// replace apply();
+//es5
+// function sum(a,b,c){
+//     console.log(a+b+c);
+// }
+
+// // sum(1,2,3);
+
+// var arrVal =[5,6,3];
+// sum.apply(null,arrVal);
+
+
+
+//es6
+// function sum(a,b,c){
+//     console.log("sum :",a+b+c);
+// }
+
+// var arrVal =[5,6,34];
+// console.log(...arrVal);
+// sum(...arrVal);
+
+
+
+
+//replace concat()
+
+// let arr1 = [1,2,3]
+// let arr2 = [4,5,6]
+// let arr3 = [7,8,9]
+
+
+// // arr1 =arr2.concat(arr2) //es5
+
+// arr1 = [...arr1,...arr2,...arr3]
+// console.log(arr1);
+
+
+
+
+let arc1 = [1,2,3]
+let arc3 = [8,9,10]
+
+// let arc2 = arc1
+// console.log(arc1);
+// arc2.push(4,5)    //es5
+// console.log(arc2);
+// console.log(arc1);
+
+
+// let arc2 = [...arc1];
+let arc2 = [...arc1,4,5,6,7,...arc3,11];
+
+console.log(arc2);
+console.log(arc1);
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

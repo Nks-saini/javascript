@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title>array</title>
+    <script>
+// make new array based of  condition
+        var ages = [10, 19, 18, 20, 23];
+        document.write(ages + "<br/><br/>");
+
+
+        var b = ages.filter(checkAdult);
+        document.write(b + "<br/>");
+
+        function checkAdult(age) {
+            return age >= 18
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

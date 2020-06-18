@@ -1,0 +1,44 @@
+<html>
+<body>
+    <h2>ES6 Concept</h2>
+    <h2>object destructring </h2>
+<script>
+
+const bioData ={
+     name :"Nitin",
+     age :26,
+     deg :'B-Tech',
+     hob:{
+         first:'playing',
+         second:'coder',
+     }
+}
+console.log(`My name is : ${bioData.name}`);
+
+
+// let {name,age,deg} =bioData
+// console.log(`My name is : ${name} and age is ${age}`);
+
+
+let {name:myname,age,deg,hob} =bioData
+console.log(`My name is : ${myname} and my hobbies : ${hob.second} and my age : ${age}`);
+
+// const nm = `${name}`;
+// const ag = `${age}`;
+// console.log('my name is',nm,"my age is :",ag);
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

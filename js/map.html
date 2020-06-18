@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>array</title>
+    <script>
+
+        var a = [11, 4, 9, 16, 13]
+        document.write(a + "<br/>");
+
+        var b = a.map(item);
+        document.write(b + "<br/>");
+
+        function item(x) {
+            return x * 2;
+        }
+
+
+
+        document.write("<br/><br/>")
+
+        var arr1 = [
+            { fnam: "Nitin", lnam: "Saini" },
+            { fnam: "Rahul", lnam: "Sharma" },
+            { fnam: "Kumar", lnam: "Shanu" },
+        ]
+
+        var d = arr1.map(fun1);
+        document.write(d + "<br/>");
+
+        function fun1(x) {
+            return x.fnam + " " + x.lnam;
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

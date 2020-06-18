@@ -1,0 +1,43 @@
+<html>
+<body>
+    <h2>ES6 Concept</h2>
+    <h2>Default parameter </h2>
+<script>
+
+//es5
+
+// function mul(a,b){
+//     console.log(a*b);
+// }
+// mul(4);
+
+// function mul(a,b){
+//     b= (typeof b !== 'undefined') ? b:3
+//     console.log(b);
+//     console.log(a*b);
+// }
+// mul(4);
+
+
+
+// function mul(a,b=3){
+//     console.log(a*b);
+// }
+// mul(4);
+
+
+//es 6
+const mul = (a,b=3,c=7) =>{
+    console.log(`the multipliaction of a,b,c : ${a*b*c}`);
+}
+mul(4);
+
+
+</script>
+</body>
+</html>
+
+
+
+
+

@@ -1,0 +1,45 @@
+
+
+<script>
+
+// 1: 2s student roll no
+// 2: 2s student name and age
+// 2: 2s student gender
+
+const getRoll = () =>{
+    setTimeout( () => {
+            console.log("API getting roll no")
+            let roll_no = [1,2,3,4,5]
+            console.log(roll_no);
+
+            setTimeout((rollno) =>{
+                const biodata = { 
+                    "name" :"nitin" ,
+                     "age":24}
+                console.log(`My name is ${biodata.name} and I am ${biodata.age} old . My roll no is ${rollno}`);
+
+
+                        setTimeout( (name) =>{
+                            biodata.gender = "male"
+                         console.log(`My name is ${biodata.name} and I am ${biodata.age} old .My roll no is ${rollno}, I am alpha ${biodata.gender}`);
+
+                        },2000,biodata.name)
+
+            },2000,roll_no[1])
+    },2000)
+}
+
+getRoll()
+
+
+
+
+
+
+
+
+
+//callback is a convention it is used  for the hs fn.
+//ek ke baad ek call kar rhe fn this is a callback hell
+
+</script>

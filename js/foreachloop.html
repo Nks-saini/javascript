@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>array</title>
+    <script>
+//for object
+        var a = {
+            fname: "Pooja",
+            lname: "gupta",
+            age: "23",
+            country: "India",
+        }
+
+        for (var key in a) {
+            //    document.write(key +" : "+ a[key]+"<br/>")
+            document.write(`${key} : ${a[key]} <br/>`);
+        }
+
+
+        var obj = {
+            fname: "Priyanka",
+            lname: "Sharma",
+            age: "22",
+            country: "Austrialia",
+            movies: ['hum', 'raaj', 'love', 'pyar']
+        }
+
+        document.write(obj.movies[2]);
+
+        document.write("<br/>------------<br/>");
+//for arrays
+        var m = [10, 20, 30, 40, 50];
+        document.write(m + "<br/>");
+
+        for (var n in m) {
+            document.write("array "+n+ ":"+m[n]+"<br/>");
+        }
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

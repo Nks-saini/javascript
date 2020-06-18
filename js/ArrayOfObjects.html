@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>array</title>
+    <script>
+
+        var student = [
+
+            { name: "Ram", age: 28 },
+            { name: "Nitin", age: 22 },
+            { name: "Rupa", age: 21 },
+
+        ]
+
+        console.log(student);
+
+        for (var i = 0; i < student.length; i++) {
+            document.write(student[i].name + " " + student[i].age + "<br/>");
+        }
+
+
+        var b = [10, 20, 33, 62, 11, 42]
+
+        for (var i = 0; i < b.length; i++) {
+            document.write(`${b[i]}<br/>`);
+        }
+
+
+        var fruits, text, fLen, i;
+        fruits = ["Banana", "Orange", "Apple", "Mango"];
+        fLen = fruits.length;
+
+        // text = "<ul>";
+        for (i = 0; i < fLen; i++) {
+            text +=  fruits[i] ;
+        }
+        // text += "</ul>";
+
+    console.log(text);
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>

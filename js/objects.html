@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <title>array</title>
+    <script>
+
+var a ={
+    fname:"nitin",
+    lname:"Saini",
+    age:"25",
+    email:"nks@.com",
+    movies:['dhoom','kaal','hum'],
+    living:{
+        city:"ramnagar",
+        country:"India",
+    },
+    salary:function(){
+        return 25000;
+    },
+    fullname:function(){
+        return this.fname + " " + this.lname;
+    }
+
+}
+console.log(a)
+console.log(a.movies)
+console.log(a.salary())
+
+document.write(a.salary()+"<br/>");
+document.write(a.living.city+"<br/>");
+document.write(a.fullname());
+
+
+
+////
+document.write("<br/><br/>")
+var person = new Object()
+
+person.fnm ="Ram"
+person.lnm ="Kumar"
+
+document.write(person.fnm);
+document.write("<br/>")
+document.write(person['lnm']);
+
+
+    </script>
+</head>
+
+<body>
+</body>
+
+</html>
